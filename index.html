@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn Ethical Hacking | Hacker404</title>
+  <meta name="description" content="Explore advanced hacking techniques, tools, and ethical hacking guides at black.hacker404.site. Master cybersecurity, Kali Linux, Termux, and more with hands-on tutorials.">
+  <meta name="keywords" content="hacking tutorials, ethical hacking, black hat, kali linux, termux hacking, penetration testing, website hacking, bug bounty, hacker404, cybersecurity tools, hacking tricks, ethical hacker training">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+   <link rel="stylesheet" href="404.css" />
+</head>
+  
+<body>
+
+  
+  <header>
+    <div class="logo">
+          <a href="../index.html" style="text-decoration:none;"> 
+       <span class="green-txt">Hacker</span><span class="white-txt">404</span></a>
+    </div>
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="../trends/telugutrending.html">Tools</a>
+      <a href="../artists/artists.html">Hackers</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../aboutme.html"> About us</a>
+      <a href="../privacy.html">Policy and Privacy</a>
+      
+    </nav>
+     </header>
+     
+     
+     
+     
+     <!-- search box here -->
+<div class="search-container">
+  <label for="searchInput" style="position:absolute; left:-9999px;">Search for songs or lyrics</label>
+  <input type="text" id="searchInput" placeholder="Search Tutorials..." />
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<br>
+
+<section class="intro">
+  <h1>Explore the World of Ethical Hacking & Cybersecurity</h1>
+  
+  <br>
+  
+  <p style="font-size: 18px; color: #ddd; max-width: 700px;">
+  Welcome to <strong>HackEr404</strong> – your ultimate hub to learn ethical hacking, penetration testing, web vulnerabilities, and cybersecurity tricks. 
+  Get step-by-step tutorials, hacking tools, Termux guides, and real-world examples to become a professional ethical hacker. 
+  Stay anonymous, stay smart, and hack the right way!
+</p>
+</section>
+
+
+<section class="tutorial-section">
+  <h2>🔥 What You’ll Learn</h2>
+  <div class="card-container">
+    
+    <div class="card">
+      <h3>📳Metasploit Framework</h3>
+      <p>Learn how attackers exploit SQL vulnerabilities and how to defend against them.</p>
+      <a href="sqlinjection.html">Start Learning →</a>
+    </div>
+
+    <div class="card">
+      <h3>💉 SQL Injection</h3>
+      <p>Learn how attackers exploit SQL vulnerabilities and how to defend against them.</p>
+      <a href="sqlinjection.html">Start Learning →</a>
+    </div>
+
+    <div class="card">
+      <h3>🌐 XSS Attacks</h3>
+      <p>Understand Cross-site Scripting and how to test your websites for it.</p>
+      <a href="xss.html">Learn XSS →</a>
+    </div>
+
+    <div class="card">
+      <h3>🛠️ Nmap & Recon</h3>
+      <p>Master network scanning and information gathering using Nmap.</p>
+      <a href="nmap.html">Scan Like a Pro →</a>
+    </div>
+
+    <div class="card">
+      <h3>🧱 Burp Suite</h3>
+      <p>Intercept traffic, scan vulnerabilities, and test APIs with Burp Suite.</p>
+      <a href="burpsuite.html">Use Burp →</a>
+    </div>
+
+  </div>
+</section>
+
+<br>
+
+<section class="helpful-section">
+  <p>
+    Whether you're a beginner or an aspiring ethical hacker, <strong>hackEr404.site</strong> is your learning zone. We cover everything — from basic recon tools to advanced website vulnerability testing. Every tutorial is written in a simple way with real-world examples so you can understand and apply it easily. Use the search bar to explore specific topics or choose from the latest trending tools. We regularly update tutorials and tools to keep you ahead in the game. Save this site, visit daily, and become an expert. Knowledge is power, and here — it’s free, accessible, and just a click away.
+  </p>
+</section>
+
+
+     <br>
+     <br>
+     <br>
+ <!-- Social Media Section -->
+ <section class="social-media">
+ <h3>Follow Us</h3>
+ <div class="social-icons">
+ <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+ <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+ <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+ <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+ </div>
+ </section>
+
+
+
+<footer>
+ <p>&copy; 2025 SongBook by Hacker404</p>
+ </footer>
+
+<script>
+  
+  // --- MENU TOGGLE ---
+  function toggleMenu() {
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("show");
+  }
+
+  document.addEventListener("click", function(event) {
+    const navMenu = document.getElementById("nav-menu");
+    const toggleBtn = document.querySelector(".menu-toggle");
+    if (!navMenu.contains(event.target) && !toggleBtn.contains(event.target)) {
+      navMenu.classList.remove("show");
+    }
+  });
+
+  // --- BELL ICON NOTIFICATION ---
+  let notificationsEnabled = localStorage.getItem('notify') === 'true';
+
+  function updateBellIcon() {
+    const bell = document.getElementById('bellIcon');
+    if (bell) {
+      bell.style.color = notificationsEnabled ? 'gold' : 'gray';
+    }
+  }
+
+  function toggleNotification() {
+    notificationsEnabled = !notificationsEnabled;
+    localStorage.setItem('notify', notificationsEnabled);
+    updateBellIcon();
+  }
+
+  updateBellIcon();
+</script>
+
+  
+</body>
+</html>
+
+
+
